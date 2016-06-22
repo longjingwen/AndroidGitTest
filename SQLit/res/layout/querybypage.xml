@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:text="姓名"
+            android:textSize="16sp" >
+        </TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:text="年龄"
+            android:textColor="#a4e2c6"
+            android:textSize="16sp" >
+        </TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:text="性别"
+            android:textSize="16sp" >
+        </TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:text="地址"
+            android:textColor="#a4e2c6"
+            android:textSize="16sp" >
+        </TextView>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/myPersonList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:minHeight="50dp" 
+        android:background="#a1afc9">
+    </ListView>
+
+    <TextView
+        android:id="@+id/tipInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="14sp" >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/firstPage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="首页"
+            android:textSize="15sp" >
+        </Button>
+
+        <Button
+            android:id="@+id/prePage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="上一页"
+            android:textSize="15sp" >
+        </Button>
+
+        <Button
+            android:id="@+id/nextPage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="下一页"
+            android:textSize="15sp" >
+        </Button>
+
+        <Button
+            android:id="@+id/lastPage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="末页"
+            android:textSize="15sp" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>
